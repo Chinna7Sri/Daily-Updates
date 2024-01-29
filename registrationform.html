@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      h3,
+      .container {
+        text-align: center;
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+      li {
+        list-style: none;
+        text-align: left;
+        border: 1px solid;
+        margin: 5px;
+        padding: 5px;
+      }
+      ul {
+        width: 400px;
+        margin: 10px auto;
+      }
+      .textarea {
+        position: relative;
+        top: -70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Students Registration Form</h3>
+    <div class="container">
+      <form method="GET" action="https://www.chinnapage.com">
+        <ul>
+          <li>
+            <label for="username">Enter User Name:</label>
+            <input type="text" name="username" maxlength="24" />
+          </li>
+          <li>
+            <label for="password">Enter Account Password:</label>
+            <input type="password" name="password" maxlength="24" />
+          </li>
+          <li>
+            <label for="country">Select Country Name:</label>
+            <select name="country" id="country">
+              <option value="india">India</option>
+              <option value="srilanka">Srilanka</option>
+              <option value="pak">Pakistan</option>
+              <option value="nepal">Nepal</option>
+            </select>
+          </li>
+          <li>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+          </li>
+          <li>
+            <label for="dob">DOB:</label>
+            <input type="date" name="dob" />
+          </li>
+          <li>
+            <label for="languages">Languages:</label>
+            <input type="checkbox" name="English" />English
+            <input type="checkbox" name="Telugu" />Telugu
+            <input type="checkbox" name="Hindi" />Hindi
+            <input type="checkbox" name="Kannada" />Kannada
+          </li>
+          <li>
+            <label class="textarea" for="intro">Tell Me About yourself</label>
+            <textarea
+              name="intro"
+              cols="20"
+              rows="5"
+              maxlength="1000"
+            ></textarea>
+          </li>
+          <li>
+            <input type="submit" value="Register" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
