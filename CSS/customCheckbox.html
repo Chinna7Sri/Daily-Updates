@@ -1,0 +1,38 @@
+<style>
+  label {
+    position: relative;
+  }
+  input {
+    opacity: 0;
+  }
+  b {
+    margin-left: 5px;
+  }
+  div {
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+  }
+  input:checked ~ div {
+    background-color: red;
+  }
+  input:checked ~ div::after {
+    content: "";
+    border: solid white;
+    height: 15px;
+    width: 7px;
+    display: inline-block;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 0;
+    left: 5px;
+  }
+</style>
+<label>
+  <input type="checkbox" />
+  <b>Cricket </b>
+  <div></div>
+</label>

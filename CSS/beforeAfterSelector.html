@@ -1,0 +1,25 @@
+<style>
+  div {
+    /* position: relative; */
+    height: 20px;
+    background-color: red;
+  }
+  div::after {
+    content: "";
+    background-color: blue;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: 20px;
+  }
+  div::before {
+    content: "";
+    background-color: yellow;
+    height: 20px;
+    display: block;
+    position: relative;
+    top: 20px;
+  }
+</style>
+
+<div></div>

@@ -1,0 +1,29 @@
+<style>
+  div {
+    width: 20px;
+    height: 20px;
+    border: 1px solid blue;
+    border-radius: 50%;
+  }
+  input:checked ~ div::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border: 1px solid green;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+</style>
+
+<label>
+  <input type="radio" name="gen" /><span>male</span>
+  <div></div>
+</label>
+<label>
+  <input type="radio" name="gen" /><span>female</span>
+  <div></div>
+</label>
